@@ -18,6 +18,17 @@ $ ./uses_rand
         1058352291
         817726622
 
+$ LD_PRELOAD=do_not_use_rand.so ./uses_rand
+4 random numbers:
+Do not use rand()
+        42
+Do not use rand()
+        42
+Do not use rand()
+        42
+Do not use rand()
+        42
+
 $ ./do_not_use_rand.so ./uses_rand
 4 random numbers:
 Do not use rand()
