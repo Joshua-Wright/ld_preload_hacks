@@ -42,3 +42,7 @@ Do not use rand()
 ```
 
 Here we simply re-implement `rand()`, and we can change the functionality without recompiling the existing executable.
+
+
+## TODO
+* Add a wrapper wround `dlsym()` that handles C++ type-name mangling
