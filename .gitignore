@@ -1,0 +1,4 @@
+*.o
+*.so
+do_not_use_rand
+uses_rand
