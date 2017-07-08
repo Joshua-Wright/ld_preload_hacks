@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include "libmain.h"
 
 
 // very large buffer because we must preserve LD_PRELOAD (however big it was)
@@ -10,7 +11,7 @@
 const size_t BUFSIZE = 100 * 1024;
 const char *LD_PRELOAD = "LD_PRELOAD";
 
-int main(int argc, char ** argv) {
+int main(int argc, char **argv) {
     if (argc <= 1) {
         std::cout << "Usage: " << argv[0] << " COMMAND [ARGS...]" << std::endl;
         return 1;
