@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "libmain.h"
+#include "../libmain.h"
 
 extern "C" {
 int rand() {

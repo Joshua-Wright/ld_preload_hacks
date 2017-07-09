@@ -33,6 +33,12 @@ Do not use rand()
         461682392
 Do not use rand()
         1405775803
+
+$ cat /secret_file
+cat: /secret_file: No such file or directory
+
+$ ./see_hidden_file cat /secret_file
+This is a secret!
 ```
 
 Here we simply re-implement `rand()`, and we can change the functionality without recompiling the existing executable.
